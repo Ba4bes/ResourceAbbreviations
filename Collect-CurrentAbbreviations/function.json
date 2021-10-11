@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "Timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "*/1 * * * * *"
+    },
+    {
+      "name": "outputBlob",
+      "type": "blob",
+      "path": "data/abbreviation.json",
+      "connection": "resourceabbreviation_STORAGE",
+      "direction": "out"
+    }
+  ]
+}
