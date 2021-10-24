@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "Request",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "Response"
+    },
+    {
+      "name": "inputblob",
+      "type": "blob",
+      "path": "data/abbreviation.json",
+      "connection": "resourceabbreviation_STORAGE",
+      "direction": "in"
+    }
+  ]
+}
